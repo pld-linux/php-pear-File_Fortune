@@ -5,7 +5,7 @@
 %define		_pearname	File_Fortune
 
 Summary:	%{_pearname} - interface for reading from and writing to fortune files
-Summary(pl):	%{_pearname} - interfejs do odczytu i zapisywania plików fortunek.
+Summary(pl):	%{_pearname} - interfejs do odczytu i zapisywania plików fortunek
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
 Release:	1
@@ -37,16 +37,16 @@ fortune-mod programs (as well as other fortune interfaces).
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-File_Fortune dostarcza interfejs PHP do oczytu plików z fortunkami.
-Przy jego u¿yciu, mo¿liwe jest odczytanie pojedynczej lub losowej
+File_Fortune dostarcza interfejs PHP do odczytu plików z fortunkami.
+Przy jego u¿yciu mo¿liwe jest odczytanie pojedynczej lub losowej
 fortunki, jak równie¿ wszystkie fortunki z pliku.
 
-File_Fortune_Writer dostarcza interfejst do obróbki zawarto¶ci pliku z
+File_Fortune_Writer dostarcza interfejs do obróbki zawarto¶ci pliku z
 fortunkami. Pozwala na zapisywanie do pliku zestawu fortunek jak
-równie¿ odpowiedniego binarnego nag³owka. Mo¿liwe jest tak¿e
+równie¿ odpowiedniego binarnego nag³ówka. Mo¿liwe jest tak¿e
 dodawanie, usuwanie lub modyfikowanie poszczególnych fortunek.
 Operacje zapisu stworz± binarny plik z nag³ówkami pozwalaj±cy na
-wieksz± zgodno¶æ z plikami fortune i fortune-mod (jak równie¿ z innymi
+wiêksz± zgodno¶æ z plikami fortune i fortune-mod (jak równie¿ z innymi
 interfejsami do fortunek).
 
 Ta klasa ma w PEAR status: %{_status}.
@@ -55,7 +55,7 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl):	Testy dla PEAR::%{_pearname}
 Group:		Development
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
 
 %description tests
@@ -79,6 +79,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log docs/%{_pearname}/File/tutorials/File_Fortune/File_Fortune.cls
 %{php_pear_dir}/.registry/*.reg
+%dir %{php_pear_dir}/File/Fortune
+%dir %{php_pear_dir}/File/Fortune/examples
 %{php_pear_dir}/File/Fortune/examples/phpFortune
 %{php_pear_dir}/File/Fortune/Exception.php
 %{php_pear_dir}/File/Fortune/Writer.php
