@@ -5,7 +5,7 @@
 %define		_pearname	File_Fortune
 
 Summary:	%{_pearname} - interface for reading from and writing to fortune files
-Summary(pl):	%{_pearname} - interfejs do odczytu i zapisywania plikÛw fortunek
+Summary(pl.UTF-8):   %{_pearname} - interfejs do odczytu i zapisywania plik√≥w fortunek
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
 Release:	1
@@ -36,24 +36,24 @@ fortune-mod programs (as well as other fortune interfaces).
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-File_Fortune dostarcza interfejs PHP do odczytu plikÛw z fortunkami.
-Przy jego uøyciu moøliwe jest odczytanie pojedynczej lub losowej
-fortunki, jak rÛwnieø wszystkie fortunki z pliku.
+%description -l pl.UTF-8
+File_Fortune dostarcza interfejs PHP do odczytu plik√≥w z fortunkami.
+Przy jego u≈ºyciu mo≈ºliwe jest odczytanie pojedynczej lub losowej
+fortunki, jak r√≥wnie≈º wszystkie fortunki z pliku.
 
-File_Fortune_Writer dostarcza interfejs do obrÛbki zawarto∂ci pliku z
+File_Fortune_Writer dostarcza interfejs do obr√≥bki zawarto≈õci pliku z
 fortunkami. Pozwala na zapisywanie do pliku zestawu fortunek jak
-rÛwnieø odpowiedniego binarnego nag≥Ûwka. Moøliwe jest takøe
-dodawanie, usuwanie lub modyfikowanie poszczegÛlnych fortunek.
-Operacje zapisu stworz± binarny plik z nag≥Ûwkami pozwalaj±cy na
-wiÍksz± zgodno∂Ê z plikami fortune i fortune-mod (jak rÛwnieø z innymi
+r√≥wnie≈º odpowiedniego binarnego nag≈Ç√≥wka. Mo≈ºliwe jest tak≈ºe
+dodawanie, usuwanie lub modyfikowanie poszczeg√≥lnych fortunek.
+Operacje zapisu stworzƒÖ binarny plik z nag≈Ç√≥wkami pozwalajƒÖcy na
+wiƒôkszƒÖ zgodno≈õƒá z plikami fortune i fortune-mod (jak r√≥wnie≈º z innymi
 interfejsami do fortunek).
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -61,7 +61,7 @@ AutoReq:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
