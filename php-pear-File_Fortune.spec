@@ -5,7 +5,7 @@
 %define		_pearname	File_Fortune
 
 Summary:	%{_pearname} - interface for reading from and writing to fortune files
-Summary(pl.UTF-8):   %{_pearname} - interfejs do odczytu i zapisywania plików fortunek
+Summary(pl.UTF-8):	%{_pearname} - interfejs do odczytu i zapisywania plików fortunek
 Name:		php-pear-%{_pearname}
 Version:	0.9.0
 Release:	1
@@ -53,7 +53,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
