@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		File
 %define		_subclass	Fortune
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	File_Fortune
 
 Summary:	%{_pearname} - interface for reading from and writing to fortune files
 Summary(pl.UTF-8):	%{_pearname} - interfejs do odczytu i zapisywania plików fortunek
 Name:		php-pear-%{_pearname}
-Version:	0.9.0
+Version:	1.0.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	c4769e79b5f5063aabb18132d57f31f9
+# Source0-md5:	790f547447ade697d4227eca00107dec
 URL:		http://pear.php.net/package/File_Fortune/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -77,13 +77,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log docs/%{_pearname}/File/tutorials/File_Fortune/File_Fortune.cls
+%doc install.log docs/%{_pearname}/tutorials/File_Fortune.cls
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/File/Fortune
-%dir %{php_pear_dir}/File/Fortune/examples
-%{php_pear_dir}/File/Fortune/examples/phpFortune
-%{php_pear_dir}/File/Fortune/Exception.php
-%{php_pear_dir}/File/Fortune/Writer.php
+%{php_pear_dir}/data/%{_pearname}
+%{php_pear_dir}/File/Fortune
 %{php_pear_dir}/File/Fortune.php
 
 %files tests
