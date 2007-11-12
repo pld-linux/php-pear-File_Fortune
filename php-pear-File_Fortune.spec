@@ -8,7 +8,7 @@ Summary:	%{_pearname} - interface for reading from and writing to fortune files
 Summary(pl.UTF-8):	%{_pearname} - interfejs do odczytu i zapisywania plików fortunek
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,7 +17,7 @@ URL:		http://pear.php.net/package/File_Fortune/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-PEAR >= 1.3.4
+Requires:	php-pear-PEAR-core >= 1.3.4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
